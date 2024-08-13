@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Backport where Value: View {
-    @available(iOS 17.0, *)
+    @available(iOS 14.0, *)
     @MainActor
     @ViewBuilder
     func onScrollGeometryChange<T>(
