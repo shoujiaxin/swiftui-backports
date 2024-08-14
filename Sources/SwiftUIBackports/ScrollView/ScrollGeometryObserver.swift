@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 @_spi(Advanced) import SwiftUIIntrospect
 
-@available(iOS 14.0, *)
+@available(iOS, introduced: 14.0, deprecated: 18.0)
 struct ScrollGeometryObserver<T>: ViewModifier where T: Equatable {
     let transform: (ScrollGeometry) -> T
 

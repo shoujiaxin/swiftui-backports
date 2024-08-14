@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Backport where Value: View {
-    @available(iOS 14.0, *)
+    @available(iOS, introduced: 14.0, deprecated: 17.0)
     @ViewBuilder
     func onChange(
         of value: some Equatable,
@@ -34,7 +34,7 @@ public extension Backport where Value: View {
         }
     }
 
-    @available(iOS 14.0, *)
+    @available(iOS, introduced: 14.0, deprecated: 17.0)
     @ViewBuilder
     func onChange<V>(
         of value: V,
