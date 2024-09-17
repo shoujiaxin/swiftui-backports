@@ -15,7 +15,7 @@ struct ScrollGeometryObserver<T>: ViewModifier where T: Equatable {
 
     let action: (_ oldValue: T, _ newValue: T) -> Void
 
-    private class Store {
+    private final class Store {
         var contentOffsetToken: NSKeyValueObservation?
 
         var contentSizeToken: NSKeyValueObservation?
@@ -25,7 +25,8 @@ struct ScrollGeometryObserver<T>: ViewModifier where T: Equatable {
         var boundsToken: NSKeyValueObservation?
     }
 
-    private let store: Store = .init()
+    @State
+    private var store: Store = .init()
 
     @State
     private var geometry: ScrollGeometry = .init(
