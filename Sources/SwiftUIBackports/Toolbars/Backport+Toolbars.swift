@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Backport where Value: View {
-    @available(iOS 16.0, *)
+    @available(iOS, introduced: 16.0, deprecated: 18.0)
     @ViewBuilder
     func toolbarVisibility(_ visibility: Visibility, for bar: ToolbarPlacement) -> some View {
         if #available(iOS 18.0, *) {

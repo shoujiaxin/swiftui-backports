@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 14.0, *)
+@available(iOS, introduced: 14.0, deprecated: 18.0)
 public struct ScrollGeometry: Equatable, Sendable {
     /// The content offset of the scroll view.
     ///
